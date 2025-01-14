@@ -1,50 +1,83 @@
-# React + TypeScript + Vite
+# List Character - Simpsons Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Sobre o Projeto
+Este projeto é um portal dedicado aos fãs da série "Os Simpsons". Ele permite que os usuários explorem informações sobre os personagens, incluindo suas frases icônicas e imagens, tudo organizado em uma interface intuitiva e agradável. A aplicação foi desenvolvida utilizando React e possui paginação para facilitar a navegação entre os personagens.
 
-Currently, two official plugins are available:
+### Funcionalidades Principais
+- Listagem de personagens com frases e imagens.
+- Paginação para navegar pelos personagens.
+- Mensagem de carregamento enquanto os dados são buscados.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
+- **React**: Biblioteca JavaScript para criação da interface.
+- **TypeScript**: Tipagem estática para maior segurança e produtividade.
+- **SCSS**: Para estilização modular e eficiente.
+- **Axios**: Para consumo da API de personagens.
+- **API**: Utilizada para buscar os dados dos personagens dos Simpsons.
 
-## Expanding the ESLint configuration
+## Créditos
+- **API de Personagens dos Simpsons**: [Simpsons API](#https://thesimpsonsquoteapi.glitch.me/).
+- **Desenvolvedor**: Leonardo Paniz.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Como Iniciar o Projeto
+Siga as instruções abaixo para rodar o projeto localmente:
 
-- Configure the top-level `parserOptions` property like this:
+### Pré-requisitos
+Certifique-se de ter instalado:
+- **Node.js** (versão 16 ou superior).
+- **npm** ou **yarn**.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Passos para Inicialização
+1. **Clone o repositório**
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. **Navegue até o diretório do projeto**
+   ```bash
+   cd list-character
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+3. **Instale as dependências**
+   Caso utilize npm:
+   ```bash
+   npm install
+   ```
+   Ou, caso utilize yarn:
+   ```bash
+   yarn install
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+4. **Inicie o servidor de desenvolvimento**
+   Caso utilize npm:
+   ```bash
+   npm start
+   ```
+   Ou, caso utilize yarn:
+   ```bash
+   yarn start
+   ```
+
+5. **Acesse a aplicação no navegador**
+   Acesse a aplicação em [http://localhost:5173](http://localhost:5173).
+
+## Contribuição
+Contribuições são bem-vindas! Caso queira contribuir:
+1. Faça um fork do projeto.
+2. Crie uma branch para sua feature ou correção de bug.
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. Faça um commit das suas alterações.
+   ```bash
+   git commit -m "Minha nova feature"
+   ```
+4. Faça um push para a branch criada.
+   ```bash
+   git push origin minha-feature
+   ```
+5. Abra um Pull Request no repositório original.
+
+---
+Esperamos que você aproveite o portal e tenha uma ótima experiência explorando o universo dos Simpsons!
+
