@@ -1,0 +1,146 @@
+$firs-color: #fad427;
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+
+    img.footer {
+        width: 100%;
+        height: auto;
+    }
+}
+
+section.home {
+    padding: 2rem 8rem 0 8rem;
+    background-image: url("../../assets/Frame%2021.svg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+    h2.title {
+        font-family: "Simpsonfont", sans-serif;
+        font-size: 22px;
+        color: #000;
+
+        strong {
+            color: $firs-color;
+            font-weight: 500;
+        }
+    }
+}
+
+main.aberturaMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+div.textDiv {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4rem;
+
+    h1 {
+        font-family: "Baloo 2", cursive;
+        color: #fff;
+        font-size: 48px;
+        line-height: 3rem;
+        margin-top: 6rem;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-family: "Inter", sans-serif;
+        color: #fff;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    a button {
+        background-color: $firs-color;
+        color: #000;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        font-family: "Simpsonfont", sans-serif;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+
+div.figureSimpsons {
+    width: 60%;
+    height: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+section.charactersListSections {
+    div.lineGreen {
+        height: 2rem;
+        width: 100%;
+        background-color: #d9eabf;
+    }
+
+    main {
+        padding: 4rem 8rem 4rem 8rem;
+
+        h2 {
+            font-family: "SimpsonFont";
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-top: 16px;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            gap: 0.5rem;
+
+            button {
+                cursor: pointer;
+                background-color: #d9d9d9;
+                padding: 5px 10px;
+                border: none;
+                border-radius: 5px;
+                font-family: "SimpsonFont";
+            }
+
+            button.activePage {
+                background-color: $firs-color;
+            }
+        }
+    }
+}
