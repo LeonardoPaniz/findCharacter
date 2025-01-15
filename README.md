@@ -30,12 +30,12 @@ Certifique-se de ter instalado:
 ### Passos para Inicialização
 1. **Clone o repositório**
    ```bash
-   git clone <URL_DO_REPOSITORIO>
+   git clone https://github.com/LeonardoPaniz/findCharacter.git
    ```
 
 2. **Navegue até o diretório do projeto**
    ```bash
-   cd list-character
+   cd findCharacter
    ```
 
 3. **Instale as dependências**
@@ -51,7 +51,7 @@ Certifique-se de ter instalado:
 4. **Inicie o servidor de desenvolvimento**
    Caso utilize npm:
    ```bash
-   npm start
+   npm run dev
    ```
    Ou, caso utilize yarn:
    ```bash
