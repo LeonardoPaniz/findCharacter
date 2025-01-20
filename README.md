@@ -81,3 +81,5 @@ Contribuições são bem-vindas! Caso queira contribuir:
 ---
 Esperamos que você aproveite o portal e tenha uma ótima experiência explorando o universo dos Simpsons!
 
+![Desktop - 1 (1)](https://github.com/user-attachments/assets/8092c32d-939e-454b-a095-32df0121c69d)
+
